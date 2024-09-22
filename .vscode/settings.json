@@ -1,0 +1,4 @@
+{
+  "bazel.lsp.command": "starpls",
+  "bazel.lsp.args": ["server", "--experimental_infer_ctx_attributes"]
+}

@@ -1,0 +1,11 @@
+bazel_dep(name = "rules_lightningcss", version = "0.0.0")
+
+local_path_override(
+    module_name = "rules_lightningcss",
+    path = "..",
+)
+
+lightningcss = use_extension("@rules_lightningcss//lightningcss:extensions.bzl", "lightningcss")
+lightningcss.download_cli(version = "1.27.0")
+use_repo(lightningcss, "lightningcss_toolchains")
+register_toolchains("@lightningcss_toolchains//:all")
