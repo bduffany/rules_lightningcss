@@ -1,7 +1,7 @@
 # rules_lightningcss
 
-Bazel rules for https://github.com/parcel-bundler/lightningcss,
-an extremely fast parser, transformer, and minifier written in Rust.
+Bazel rules for https://github.com/parcel-bundler/lightningcss, an
+extremely fast CSS parser, transformer, and minifier written in Rust.
 
 ## Status
 
