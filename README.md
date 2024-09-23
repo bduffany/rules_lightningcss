@@ -3,14 +3,22 @@
 Bazel rules for https://github.com/parcel-bundler/lightningcss, an
 extremely fast CSS parser, transformer, and minifier written in Rust.
 
-## Status
+## Project status
+
+This project is being developed, and does not yet have an official
+release. For now, feel free to click "Watch" on GitHub to be notified when
+it is released.
+
+## Features
 
 Core functionality:
 
-- [x] **CSS modules**
+- [x] **CSS modules**: module-scoped class names (`composes` is not supported)
 - [x] **browserslist**
 - [x] **Minification**
-- [x] **Source map generation**
+- [x] **Source maps**
+- [ ] Compiling multiple sources (`--output-dir`)
+- [ ] Dependencies and bundling: `@import`, `composes` (CSS modules), custom resolvers
 - [ ] Custom transforms
 
 Supporting functionality:
