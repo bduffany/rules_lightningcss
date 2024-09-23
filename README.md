@@ -8,8 +8,6 @@ extremely fast CSS parser, transformer, and minifier written in Rust.
 Core functionality:
 
 - [x] **CSS modules**
-  - Basic support is implemented; some dependency resolution features
-    may be missing
 - [x] **browserslist**
 - [x] **Minification**
 - [x] **Source map generation**
