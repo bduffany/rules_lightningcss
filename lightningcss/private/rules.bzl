@@ -160,12 +160,6 @@ _lightningcss = rule(
         "arguments": attr.string_list(
             doc = "Extra arguments to pass to lightningcss-cli. Should generally not be needed; prefer specifying args as attributes.",
         ),
-        "_generate_js": attr.label(
-            default = "//tools:generate_js",
-            executable = True,
-            allow_single_file = True,
-            cfg = "exec",
-        ),
     },
     implementation = _lightningcss_impl,
     toolchains = ["//toolchain:toolchain_type"],
