@@ -27,8 +27,8 @@ Supporting functionality:
   - Given a file like `MyComponent.module.css`, generates
     `MyComponent.module.css.js` containing a map with classes that can be
     imported and referenced from JS or TS code.
-  - This is done using a small tool written in C that directly generates a
-    JS file based on the JSON output from lightningcss.
+  - This is done using a small, fast tool written in C++ that parses the
+    JSON output from lightningcss and directly generates a JS file.
 
 ## Usage
 
