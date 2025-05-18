@@ -1,8 +1,7 @@
 """Hash library for internal use in lightningcss."""
 
 def sha256_ascii_printable_chars(message):
-    """Computes the SHA256 hash of the given string and returns a truncated
-    string representation using only alphabetic characters.
+    """Returns a truncated SHA256 hash with alphabetic characters.
 
     For now, assumes that the message consists of only printable ASCII
     characters. All other bytes in the payload are substituted with 0x00.

@@ -218,7 +218,7 @@
     "@@rules_lightningcss+//lightningcss:extensions.bzl%lightningcss": {
       "general": {
         "bzlTransitiveDigest": "5ZnbhF33FzfjPB4E7IsJq8yAQaY2YG0ZCx20p7/0vNI=",
-        "usagesDigest": "5GTduJWGbbLp+i9UIJQqX/BQ9gMT7BK1J8j6pZ9oxNI=",
+        "usagesDigest": "moCwphsiNsuNQsQVayT4sADw7k8rcVZ2TEAPiVwMJSM=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -227,20 +227,9 @@
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
               "urls": [
-                "https://registry.npmjs.org/lightningcss-cli-darwin-x64/-/lightningcss-cli-darwin-x64-1.27.0.tgz"
+                "https://registry.npmjs.org/lightningcss-cli-darwin-x64/-/lightningcss-cli-darwin-x64-1.30.1.tgz"
               ],
-              "integrity": "sha512-xCMimAAgbhCdJjTvwxulMzR/Im4Sp3jh6nQjMqzUXFdhV6vkA9sAJeUeFgZfuPu3cTRI8w74DllLvbK77e76nw==",
-              "build_file_content": "exports_files([\"lightningcss\"])",
-              "strip_prefix": "package"
-            }
-          },
-          "com_github_parcel-bundler_lightningcss_lightningcss-cli-darwin-arm64": {
-            "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
-            "attributes": {
-              "urls": [
-                "https://registry.npmjs.org/lightningcss-cli-darwin-arm64/-/lightningcss-cli-darwin-arm64-1.27.0.tgz"
-              ],
-              "integrity": "sha512-5vXCakJA/m2WSVmCUSpeEjsGy+LB/N2YCy/PjoZturH7doAXW8IP/p5X1fbuyX4AwynpzCWGiVjmFFymPOTBUg==",
+              "integrity": "sha512-Q7hzbzkGe5EUMgojjYgnhT9wkSLZp0I9Q25IP7IDnMv2KMTdqUSLAn7YMu9Xqt22MspAuIWV7DkyTiN4xM7fIA==",
               "build_file_content": "exports_files([\"lightningcss\"])",
               "strip_prefix": "package"
             }
@@ -249,9 +238,9 @@
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
               "urls": [
-                "https://registry.npmjs.org/lightningcss-cli-linux-x64-gnu/-/lightningcss-cli-linux-x64-gnu-1.27.0.tgz"
+                "https://registry.npmjs.org/lightningcss-cli-linux-x64-gnu/-/lightningcss-cli-linux-x64-gnu-1.30.1.tgz"
               ],
-              "integrity": "sha512-b8ouWePiwhQdKD9vBu7ywLwDXJ+Y3MHWY7hLbnwxp1+HWQ/Q9fLNEpfR4ZoFXrw1BwMDBp5T68c1hPBlGhDgqg==",
+              "integrity": "sha512-AoxyUYuwl/IGTFl178Kxm/MMIgao3s9bmp/RrTbh51+8LsUh9YWolvyhmVxfiCauJ70dfoknQ/tsa+NKs2XDfQ==",
               "build_file_content": "exports_files([\"lightningcss\"])",
               "strip_prefix": "package"
             }
@@ -260,20 +249,9 @@
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
               "urls": [
-                "https://registry.npmjs.org/lightningcss-cli-win32-x64-msvc/-/lightningcss-cli-win32-x64-msvc-1.27.0.tgz"
+                "https://registry.npmjs.org/lightningcss-cli-win32-x64-msvc/-/lightningcss-cli-win32-x64-msvc-1.30.1.tgz"
               ],
-              "integrity": "sha512-CkurSCmj5iDJ5Jgcg+XibVo3GSEo6W6WbVeKuzU4bfeh3lRLcMHUG/F3+L66JJedUUKUq8eMQgbLOPmtgwqxJA==",
-              "build_file_content": "exports_files([\"lightningcss\"])",
-              "strip_prefix": "package"
-            }
-          },
-          "com_github_parcel-bundler_lightningcss_lightningcss-cli-linux-arm64-gnu": {
-            "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
-            "attributes": {
-              "urls": [
-                "https://registry.npmjs.org/lightningcss-cli-linux-arm64-gnu/-/lightningcss-cli-linux-arm64-gnu-1.27.0.tgz"
-              ],
-              "integrity": "sha512-TfVnMGDWcCGRwPBb7asEdWYE+kTVceMob+Lm2abfEepPPgDMSc/wYMeP5saofDvYsGINluJO6bZiPpFJCGDr7w==",
+              "integrity": "sha512-AwkpPbM9NABz1bRLr6GPrUa1wyOOUAZpOoR/HmDMOYPUAiQOlzxsNUR0/YreWbwD3X+dqkwXywSbwHddvTNZ1A==",
               "build_file_content": "exports_files([\"lightningcss\"])",
               "strip_prefix": "package"
             }
@@ -282,9 +260,31 @@
             "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
             "attributes": {
               "urls": [
-                "https://registry.npmjs.org/lightningcss-cli-win32-arm64-msvc/-/lightningcss-cli-win32-arm64-msvc-1.27.0.tgz"
+                "https://registry.npmjs.org/lightningcss-cli-win32-arm64-msvc/-/lightningcss-cli-win32-arm64-msvc-1.30.1.tgz"
               ],
-              "integrity": "sha512-HWX6aY0CHft7QkxhC6NhAAD0Qm9yrAH8JKTfNRDxvyL+q6E+JQDO/vG33x4YVRQoIL3Evh9CULyHDyHCNy0IdQ==",
+              "integrity": "sha512-qDlhf9FAy+26MDMP14VWy+W5ho7KruR1ne2fYWKxgCGw7WZ5gnaaZpRBewp4KRd7lqo/opaIsK8kQy/WJTJD9A==",
+              "build_file_content": "exports_files([\"lightningcss\"])",
+              "strip_prefix": "package"
+            }
+          },
+          "com_github_parcel-bundler_lightningcss_lightningcss-cli-darwin-arm64": {
+            "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
+            "attributes": {
+              "urls": [
+                "https://registry.npmjs.org/lightningcss-cli-darwin-arm64/-/lightningcss-cli-darwin-arm64-1.30.1.tgz"
+              ],
+              "integrity": "sha512-h00/Iq4Hjw+1Bm3Uoc2i1cryDdH1YhTK8e7d/Y/Wn2sUrdK9nVRxzuTk7qUur6KqVgXFthItAUhuGjFyDBJpmg==",
+              "build_file_content": "exports_files([\"lightningcss\"])",
+              "strip_prefix": "package"
+            }
+          },
+          "com_github_parcel-bundler_lightningcss_lightningcss-cli-linux-arm64-gnu": {
+            "repoRuleId": "@@bazel_tools//tools/build_defs/repo:http.bzl%http_archive",
+            "attributes": {
+              "urls": [
+                "https://registry.npmjs.org/lightningcss-cli-linux-arm64-gnu/-/lightningcss-cli-linux-arm64-gnu-1.30.1.tgz"
+              ],
+              "integrity": "sha512-2uh0vwHn0UyrZnVX2XCw8qbwLKuAwM1nLo43ddcviQum9rF08nHdPEqLXZfDzR/VA0pbyFjSw7EbbEBjXGsFxw==",
               "build_file_content": "exports_files([\"lightningcss\"])",
               "strip_prefix": "package"
             }
@@ -294,11 +294,11 @@
             "attributes": {
               "binary_names": [
                 "lightningcss-cli-darwin-x64",
-                "lightningcss-cli-darwin-arm64",
                 "lightningcss-cli-linux-x64-gnu",
                 "lightningcss-cli-win32-x64-msvc",
-                "lightningcss-cli-linux-arm64-gnu",
-                "lightningcss-cli-win32-arm64-msvc"
+                "lightningcss-cli-win32-arm64-msvc",
+                "lightningcss-cli-darwin-arm64",
+                "lightningcss-cli-linux-arm64-gnu"
               ]
             }
           }
