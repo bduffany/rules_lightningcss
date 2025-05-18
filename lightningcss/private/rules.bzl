@@ -42,6 +42,11 @@ def _lightningcss_impl(ctx):
     if ctx.attr.minify:
         args.append("--minify")
 
+    if ctx.attr.custom_media:
+        args.append("--custom-media")
+    if ctx.attr.error_recovery:
+        args.append("--error-recovery")
+
     args.extend(ctx.attr.arguments)
 
     if ctx.attr.css_modules_metadata_out and not ctx.attr.css_modules:
@@ -73,6 +78,9 @@ def _lightningcss_impl(ctx):
         if not ctx.attr.browserslist:
             fail("browserslist_env attribute requires browserslist attribute to be specified")
         env["BROWSERSLIST_ENV"] = ctx.attr.browserslist_env
+    if ctx.attr.targets:
+        args.append("--targets")
+        args.append(ctx.attr.targets)
 
     ctx.actions.run(
         executable = ctx.toolchains["//toolchain:toolchain_type"].lightningcssinfo.cli,
@@ -110,6 +118,9 @@ _lightningcss = rule(
         "browserslist_env": attr.string(
             doc = "browserslist env, e.g. 'production'",
         ),
+        "targets": attr.string(
+            doc = "Browser targets as hard-coded browserslist string. Cannot be used with browserslist attribute",
+        ),
         "sourcemap": attr.bool(
             doc = "If True, generates a sourcemap at <output_file>.map",
         ),
@@ -135,6 +146,12 @@ _lightningcss = rule(
         ),
         "css_modules_metadata_out": attr.string(
             doc = "Sets the default CSS module metadata JSON file name. Defaults to the CSS filename with .css replaced by .json",
+        ),
+        "custom_media": attr.bool(
+            doc = "Enable parsing custom media queries",
+        ),
+        "error_recovery": attr.bool(
+            doc = "Warn on invalid rules and declarations instead of failing",
         ),
         "minify": attr.bool(
             doc = "Output minified CSS",

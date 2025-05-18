@@ -6,6 +6,6 @@ local_path_override(
 )
 
 lightningcss = use_extension("@rules_lightningcss//lightningcss:extensions.bzl", "lightningcss")
-lightningcss.download_cli(version = "1.27.0")
+lightningcss.download_cli(version = "1.30.1")
 use_repo(lightningcss, "lightningcss_toolchains")
 register_toolchains("@lightningcss_toolchains//:all")
