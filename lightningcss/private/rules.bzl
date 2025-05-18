@@ -140,7 +140,12 @@ _lightningcss = rule(
             file, which isn't ideal for bazel use cases because the path can change
             depending on the execution environment.
 
-            So instead, we default to a hash derived from the bazel repository name
+            lightningcss supports a '[content-hash]' placeholder, which uses the
+            file's content hash instead. However, this doesn't truly guarantee
+            locally scoped CSS. If two different files have the same content hash,
+            they will reuse the same class name, meaning they aren't locally scoped.
+
+            So instead, we default to a custom hash derived from the bazel repository name
             and relative package path, which are stable regardless of where the rules
             are executed.
             """,

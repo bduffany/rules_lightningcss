@@ -1,10 +1,11 @@
 """Hash library for internal use in lightningcss."""
 
 def sha256_ascii_printable_chars(message):
-    """Computes the SHA256 hash of the given string and returns a hex string.
+    """Computes the SHA256 hash of the given string and returns a truncated
+    string representation using only alphabetic characters.
 
-    Assumes that the message consists of only printable ASCII characters.
-    All other bytes in the payload are substituted with 0x00.
+    For now, assumes that the message consists of only printable ASCII
+    characters. All other bytes in the payload are substituted with 0x00.
 
     Args:
         message: the string to compute
@@ -209,12 +210,13 @@ def sha256_ascii_printable_chars(message):
             shift = (3 - i) * 8
             hash_bytes.append((h_val >> shift) & 0xff)
 
-    # Convert to hexadecimal string
-    hex_digits = "0123456789abcdef"
+    # Convert to string representation.
+    # Don't use numeric characters since those can't be used in CSS.
+    charset = "NBCDXFGHQJnbcdxf"
     hash_hex = ""
     for b in hash_bytes:
-        hash_hex += hex_digits[(b >> 4) & 0xf]
-        hash_hex += hex_digits[b & 0xf]
+        hash_hex += charset[(b >> 4) & 0xf]
+        hash_hex += charset[b & 0xf]
 
     return hash_hex
 
