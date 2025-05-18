@@ -88,6 +88,7 @@ def _lightningcss_impl(ctx):
         inputs = inputs,
         outputs = outputs,
         env = env,
+        mnemonic = "CssCompile",
     )
 
     providers = [
@@ -190,6 +191,7 @@ def _generate_classmap_impl(ctx):
         arguments = [metadata.path, js.path],
         inputs = [metadata],
         outputs = [js],
+        mnemonic = "CssGenModuleJs",
     )
 
     return [
