@@ -1,3 +1,1 @@
 bazel-*
-# TODO: should we check in bazel lock files yet?
-MODULE.bazel.lock
